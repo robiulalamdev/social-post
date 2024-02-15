@@ -69,7 +69,7 @@ const Home = () => {
               <img
                 src={URL.createObjectURL(image)}
                 alt=""
-                className="object-contain"
+                className="object-contain w-full h-full"
               />
             ) : (
               <small>Upload an Image (.png, .jpg, .jpeg)</small>
