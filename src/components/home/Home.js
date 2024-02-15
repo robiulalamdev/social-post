@@ -19,7 +19,7 @@ const Home = () => {
     const formData = new FormData();
     formData.append(
       "access_token",
-      "EAAK97AqeosABO53dwvrkGZBqZA4n7nFdRa17XUE11NT2svwZA0ei8KwZCnZBRLv1McKAWYKZCUZBUmnQXU9MWnZAcUj3q1TdnKZAzJ4e6kyAY3rto4sX3XupX77LuzbU2OZBMDJYZByDTRlk4ZCWMYtdjjj3bEvp1nvUDwn0l4icZANC2pg0SwzyUNyXgzulQWFnEBTIXgA0fBuZAQjIzjxIyTj4F8ajvstnosOLSePn889hgZD"
+      "EAAK97AqeosABOZBCzE5XpLZC5bbiCGRCICkHciDzB23ZCnRzQATFALGzpPZClDLVnxZBFpQvJCdFsVRu3PlkpXEVJZAuE7LyMbYbLW3edk4OgQso33sXgAv96CajyPkIvM15CW03eVr6VjmYgIDgcn2mOGmZCuCaJZA5hBATCsii7jzQWrEnpyPfIpGf3ZBfHRE3aAJ6AcVnrE1A8VdPbJOihS4Fm20Ag3ZBtpYBf5xjcZD"
     );
     formData.append("caption", data?.message);
     if (image) {
@@ -30,7 +30,7 @@ const Home = () => {
       data: formData,
     };
     const result = await newPost(options);
-    // console.log(result);
+    console.log(result);
     if (result?.data?.id) {
       toast.success("New Post Created");
       setImage(null);
